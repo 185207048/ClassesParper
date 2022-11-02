@@ -1,0 +1,12 @@
+
+Z
+java:S2095"DUse try-with-resources or close this "Socket" in a "finally" clause.(¥èÈ«
+z
+java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ì­ŠÜúÿÿÿÿ
+E
+java:S1172
+"/Remove this unused method parameter "sendData".(ò±’ë
+Z
+java:S2147"DCombine this catch with the one at line 25, which has the same body.(ï­£Ä
+[
+java:S4719"9Replace charset name argument with StandardCharsets.UTF_8(ªê Ôüÿÿÿÿ8§ÖÀýÀ0

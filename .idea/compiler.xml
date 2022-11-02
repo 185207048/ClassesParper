@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ThreadDemo" />
+        <module name="NetWorkDemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ClassesParper" target="1.5" />
+      <module name="NetWorkDemo" target="8" />
       <module name="ThreadDemo" target="8" />
     </bytecodeTargetLevel>
   </component>

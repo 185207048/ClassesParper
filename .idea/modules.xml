@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ClassesParper.iml" filepath="$PROJECT_DIR$/ClassesParper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NetWorkDemo/NetWorkDemo.iml" filepath="$PROJECT_DIR$/NetWorkDemo/NetWorkDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/ThreadDemo/ThreadDemo.iml" filepath="$PROJECT_DIR$/ThreadDemo/ThreadDemo.iml" />
     </modules>
   </component>

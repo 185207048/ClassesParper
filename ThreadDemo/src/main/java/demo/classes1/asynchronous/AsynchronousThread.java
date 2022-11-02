@@ -1,5 +1,6 @@
 package demo.classes1.asynchronous;
 
+// 异步
 public class AsynchronousThread {
     public static void main(String[] args) {
         Thread t1 = new Thread(){
