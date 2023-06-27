@@ -11,6 +11,8 @@
     <modules>
         <module>ThreadDemo</module>
         <module>NetWorkDemo</module>
+        <module>Java8Stream</module>
+        <module>JavaTools</module>
     </modules>
 
 
