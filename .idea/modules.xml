@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Algorithm/Algorithm.iml" filepath="$PROJECT_DIR$/Algorithm/Algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/ClassesParper.iml" filepath="$PROJECT_DIR$/ClassesParper.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java8Stream/Java8Stream.iml" filepath="$PROJECT_DIR$/Java8Stream/Java8Stream.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaTools/JavaTools.iml" filepath="$PROJECT_DIR$/JavaTools/JavaTools.iml" />
