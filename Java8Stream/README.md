@@ -186,3 +186,26 @@ List、Map、Collection等容器，它存在以下5个特点。
     
     Fork/Join 是 Java 7 引入的一个用于并行执行任务的框架，是 ExecutorService 接口的一个实现。
     它通过将大任务拆分（fork）为若干个小任务，然后将这些小任务的结果合并（join）的方式，实现了并行处理任务的功能。
+  
+  Java 7中的Fork/Join框架是一种用于并行执行任务并且合并其寄过的框架，他是`ExecutorService`接口实现的。
+  Fork/Join框架采用『分治』的思想，将一个大任务分解成小任务执行(Fork),然后再各个结果中合并(Join)。
+  
+  这个框架用到的类主要是`ForkJoinPool`和`ForkJoinTask`
+
+  - ForkJoinPool
+    这是一个特殊的线程池，它对提交到池中的任务进行调度。一个 ForkJoinPool 是由一组工作线程组成的，它们共同来执行提交到池中的任务。
+    
+  - ForkJoinTask
+    这是 Fork/Join 框架中所有可以并行、合并执行的任务的基类。它有两个重要的子类：RecursiveAction 和 RecursiveTask，前者表示没有返回结果的任务，后者表示有返回结果的任务。
+    在`ForDemo`中可以看到利用Fork/Join累加计算从0到1亿，在这个计算过程中仅仅用了76ms。
+    
+    代码中invoke()方法是一个同步调用方法，用于启动Fork/Join任务，他可以接受一个ForkJoinTask,并返回任务计算的结果。
+    调用invoke()方法会阻塞调用线程，知道任务完成并返回结果。
+    
+
+     注：在 ForkJoinPool 中还有其他用于执行任务的方法，
+        如 execute() 和 submit()。它们和 invoke() 
+        的主要区别在于，execute() 方法用于执行没有返回结果的任务，
+        而 submit() 方法是异步的，会立即返回一个 Future 对象，
+        你可以稍后通过这个 Future 对象获取任务的结果。
+    
