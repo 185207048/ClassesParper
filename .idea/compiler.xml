@@ -10,6 +10,7 @@
         <module name="JavaTools" />
         <module name="ThreadDemo" />
         <module name="Java8Stream" />
+        <module name="SpringDemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,6 +18,7 @@
       <module name="Java8Stream" target="8" />
       <module name="JavaTools" target="8" />
       <module name="NetWorkDemo" target="8" />
+      <module name="SpringDemo" target="8" />
       <module name="ThreadDemo" target="8" />
     </bytecodeTargetLevel>
   </component>

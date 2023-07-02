@@ -77,4 +77,8 @@
 
  `算法`
 - Algorithm: 例题集合
+ 分类
+  - 逻辑推理题
+    Restructure2rowbinary
+    
  

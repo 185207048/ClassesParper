@@ -13,6 +13,7 @@
         <module>NetWorkDemo</module>
         <module>Java8Stream</module>
         <module>JavaTools</module>
+        <module>SpringDemo</module>
     </modules>
 
 
