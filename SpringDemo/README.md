@@ -111,4 +111,14 @@ spring-test：提供了对 Spring 组件的集成测试的支持。
     2、AOP（Spring’s Aspect-Oriented Programming）
     3、AspectJ 的主要特性
     4、AOT与GraalVM
-    
+  
+
+# Spring更新
+| 版本       | 内容  | 
+| :--------  | :-----  |
+| Spring Framework 1.0 | 支持核心功能IOC. AOP </br> 内置支持Hibernate、 iBatis等第三方框架 <br> 对第三方技术简单封装。如：JDBC. Mail，事务等</br>只支持XML配置方式。|
+| Spring Framework 2.0 | 最重费的变化：支持注解配置<br>增加对ehcache支持<br>对JMS (Java消息服务)，JMX (Java管理扩展）等支持|
+| Spring Framework 3.0 | 支持Java类的配置<br>由原来的一个项目拆分成多个子模块。<br>添加单元测试子模块|
+| Spring Framework 4.0 | 全面支持Java 8<br>添加二级子项目 Spring MVC，基于Servlet 3.0开发<br>提供WebSocket支持。<br>引入@RestController等注解，增强对Restful的支持。|
+| Spring Framework 5.0 | 最低环境要求java 8<br>日志整合。把原来commons-logging 封装后交为Spring-jcl模块<br>跨域更改。把原来的JSONP支持变更为修政响应头的@CrossOrigin注解。<br>响应式编程。添加二级子项目WebFlux<br>使用Kotlin（科特林）进行函数式编程|
+| Spring Framework 6.0 | 最低环境要求Java 17<br>加强对响应式编程支持。添加子模块spring-r2dbc<br>取消子模块spring-orm-hibernate4,只保留spring-orm,只支持Hibernate5.|

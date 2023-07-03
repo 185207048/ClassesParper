@@ -34,15 +34,15 @@ List、Map、Collection等容器，它存在以下5个特点。
   ![img.png](img.png)
   ![img_2.png](img_2.png)
   ![img_3.png](img_3.png)
-  如上图事例所示点击stream()函数后会跳转到Collection接口，然后调用下面函数
+  <span style="color:red;">如上图事例所示点击stream()函数后会跳转到Collection接口，然后调用下面函数</span>
   ![img_4.png](img_4.png)
-  再点击StreamSupport.stream()函数，会进入到StreamSupport类
+  <span style="color:red;">再点击StreamSupport.stream()函数，会进入到StreamSupport类</span>
   注释中对这个类的描述是"这个类主要是为库编写人员提供数据结构的流视图,面向最终用户的大多数静态流方法都在各种stream类中。"
   其中数据流视图是一种可以高效处理数据的结构，它允许开发者编写代码以声明性的方式对数据进行转换、过滤和其他操作。
   然后利用了数据流视图+管道设计模式的作用下让使用者将主要与各种具体的Stream类进行交互，这些类提供了静态方法，允许用户创建和操
   作数据流。这些方法通常设计得很直观，易于理解和使用，这样用户可以快速地进行开发，而不需要深入了解库的内部实现。
   ![img_5.png](img_5.png)
-  然后这里返回了一个ReferencePipeline的元素，这个元素由于三部分组成，分别是Head、StatefulOp和StatelessOp，在创建类的时候，只用传入他的Head就可以了。
+  <span style="color:red;">然后这里返回了一个ReferencePipeline的元素</span>，这个元素由于三部分组成，分别是Head、StatefulOp和StatelessOp，在创建类的时候，只用传入他的Head就可以了。
   当然除了ReferencePipeline元素以外，还有其他的类型，如下图所示。
   ![img_6.png](img_6.png)
   所以到目前位置就要掌握两个Java8函数编程的知识点：
@@ -60,7 +60,7 @@ List、Map、Collection等容器，它存在以下5个特点。
     - IntPipeline：该类与LongPipeline类似，只不过它处理的是int类型的数据流。它实现了IntStream接口，这个接口定义了一些特定于int类型的流操作。
     - DoublePipeline：同样，DoublePipeline类处理的是double类型的数据流，实现了DoubleStream接口。
   
-  2、管道设计模式的结构和作用
+  2、<span style="color:red;">管道设计模式的结构和作用</span>
    - 管道模式是一种设计模式，它是基于Unix中管道（pipeline）的概念，用于在一系列处理步骤之间传递数据。数据在管道中流动，每个阶段都对其进行处理。当数据从一个阶段移动到下一个阶段时，上一个阶段的输出将成为下一个阶段的输入。这种模式的好处在于，它支持并行操作，可以有效地用于解决大规模数据处理和传输的问题 
      代码PipelinePatternDemo是一个管道设计模式的例子，例子中用Function<T, R>接口实现了管道设计模式 
      下面是Function接口中定义的默认方法和静态方法：
