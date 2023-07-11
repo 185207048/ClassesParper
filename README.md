@@ -81,4 +81,14 @@
   - 逻辑推理题
     Restructure2rowbinary
     
+# 如何读源码
+开始阅读代码：在开始阅读Spring AOT模块的代码之前，对Spring框架的设计和工作原理有一定的了解会很有帮助。如果你对Spring框架不熟悉，你可能需要先阅读一些关于Spring框架基础的教程和文档。如果你已经对Spring框架有了足够的了解，你可以直接开始阅读org.springframework.aot模块的源代码。你可以在GitHub上找到Spring Native项目的源代码：https://github.com/spring-projects-experimental/spring-native
+
+阅读项目文档：在开始阅读源代码之前，通常先阅读项目的官方文档会有所帮助。Spring Native项目的官方文档提供了对项目目标和设计决策的高级概述，以及对如何使用项目的详细指南。你可以在这里找到Spring Native项目的官方文档：https://docs.spring.io/spring-native/docs/current/reference/htmlsingle/
+
+关注主要的类和接口：在阅读org.springframework.aot模块的源代码时，你可能需要关注一些主要的类和接口。例如，BootstrapCodeGenerator类是生成Spring应用程序的AOT引导代码的主要类。其他重要的类和接口可能包括AotOptions（控制AOT生成的选项），TypeSystem（提供对Java类型系统的访问），以及各种CodeContributor接口的实现（用于生成特定部分的AOT代码）。
+
+查看测试用例：测试用例是了解模块如何工作的好资源。通过阅读和理解测试用例，你可以了解到模块的各个部分如何在一起工作，以及模块应该如何使用。你可以在org.springframework.aot模块的src/test目录下找到测试用例。
+
+
  
