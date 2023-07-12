@@ -24,6 +24,49 @@
  - ClassLoader: Java类的加载机制
  - FuncCode: 函数式编程
  - JavaAOP: 讲解Java中的AOP编程
+---- 
+
+通信方式：
+
+`webSocket`
+
+`NIO`
+
+`Netty`
+
+`Grpc`
+
+```
+参考博客
+ https://blog.csdn.net/an_gentle_killer/article/details/123282801
+ http://doc.oschina.net/grpc
+```
+gRPC（Google Remote Procedure Call）是一种高性能、开源和通用的 RPC（远程过程调用）框架，Google 公司发起并开源。gRPC 的目标是使各种环境中的服务能够相互通信。gRPC 提供了一个简单的方法，让客户端应用可以直接调用另一台服务器上的方法，就好像是本地对象的方法一样。
+
+以下是 gRPC 出现的原因和主要特性：
+
+1.多语言支持：gRPC 支持多种语言，如 Go、Python、Java、C++ 等，使开发者可以在他们熟悉的编程环境中开发应用程序。
+
+2.性能：gRPC 基于 HTTP/2，支持双向流、流控制、头部压缩、多路复用等特性。相比于基于 HTTP/1.1 的 RESTful API，gRPC 有更高的性能和更低的延迟。
+
+3.编码效率：gRPC 默认使用 Protocol Buffers 作为接口定义语言，该语言能够自动生成客户端和服务器代码。相比 JSON 和 XML，Protocol Buffers 的编码和解码效率更高，数据更小。
+
+4.连续性和可扩展性：在分布式系统中，gRPC 能够支持客户端和服务器之间的稳定、可靠和低延迟的双向通信。同时，gRPC 也支持连接数的扩展。
+
+5.强大的生态系统：由于是 Google 的开源项目，gRPC 享有强大的生态系统和社区支持，这对于项目的持续改进和问题的解决具有很大的帮助。
+
+因此，gRPC 的出现主要是为了满足现代分布式系统中的高效、跨语言、稳定和可扩展的通信需求。
+
+
+
+
+
+
+
+
+`Netty + proto3`
+
+
 ----
 
  `ASM`

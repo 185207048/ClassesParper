@@ -9,12 +9,14 @@
         <module name="NetWorkDemo" />
         <module name="JavaTools" />
         <module name="ThreadDemo" />
+        <module name="DataTransmission" />
         <module name="Java8Stream" />
         <module name="SpringDemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ClassesParper" target="1.5" />
+      <module name="DataTransmission" target="1.8" />
       <module name="Java8Stream" target="8" />
       <module name="JavaTools" target="8" />
       <module name="NetWorkDemo" target="8" />
