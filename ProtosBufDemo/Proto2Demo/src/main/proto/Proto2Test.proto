@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+option java_package = "com.example.grpc.api";
+option java_outer_classname = "RPCDateServiceApi";
+option java_multiple_files = true;
+
+message SearchRequest {
+  optional string query = 1;
+  optional int32 page_number = 2;
+  optional int32 result_per_page = 3;
+}
+
+message Foo {
+  reserved 2, 15, 9 to 11;
+  reserved "foo", "bar";
+}
