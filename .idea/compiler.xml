@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="NetWorkDemo" />
-        <module name="JavaTools" />
         <module name="ThreadDemo" />
         <module name="DataTransmission" />
         <module name="Java8Stream" />
         <module name="SpringDemo" />
+        <module name="Proto3Demo" />
+        <module name="Proto2Test" />
+        <module name="JavaTools" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,6 +22,10 @@
       <module name="Java8Stream" target="8" />
       <module name="JavaTools" target="8" />
       <module name="NetWorkDemo" target="8" />
+      <module name="Proto2Demo" target="8" />
+      <module name="Proto2Test" target="8" />
+      <module name="Proto3Demo" target="8" />
+      <module name="ProtosBufDemo" target="8" />
       <module name="SpringDemo" target="8" />
       <module name="ThreadDemo" target="8" />
     </bytecodeTargetLevel>

@@ -10,10 +10,27 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>ProtosBufDemo</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>Proto3Demo</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java</artifactId>
+            <version>3.23.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java-util</artifactId>
+            <version>3.23.0</version>
+        </dependency>
+    </dependencies>
 
 </project>

@@ -8,6 +8,9 @@
       <module fileurl="file://$PROJECT_DIR$/Java8Stream/Java8Stream.iml" filepath="$PROJECT_DIR$/Java8Stream/Java8Stream.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaTools/JavaTools.iml" filepath="$PROJECT_DIR$/JavaTools/JavaTools.iml" />
       <module fileurl="file://$PROJECT_DIR$/NetWorkDemo/NetWorkDemo.iml" filepath="$PROJECT_DIR$/NetWorkDemo/NetWorkDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProtosBufDemo/Proto2Demo/Proto2Test.iml" filepath="$PROJECT_DIR$/ProtosBufDemo/Proto2Demo/Proto2Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProtosBufDemo/Proto3Demo/Proto3Demo.iml" filepath="$PROJECT_DIR$/ProtosBufDemo/Proto3Demo/Proto3Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProtosBufDemo/ProtosBufDemo.iml" filepath="$PROJECT_DIR$/ProtosBufDemo/ProtosBufDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringDemo/SpringDemo.iml" filepath="$PROJECT_DIR$/SpringDemo/SpringDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/ThreadDemo/ThreadDemo.iml" filepath="$PROJECT_DIR$/ThreadDemo/ThreadDemo.iml" />
     </modules>
