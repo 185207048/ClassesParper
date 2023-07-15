@@ -5,6 +5,7 @@
  http://doc.oschina.net/grpc
  https://grpc.io/docs/what-is-grpc/introduction/
  https://protobuf.dev/overview/
+ https://github.com/grpc/grpc-java/blob/master/README.md
 ```
 ## RPC介绍
 RPC（Remote Procedure Call）是一种编程模型，它允许程序在网络中的一台计算机（客户机）上调用另一台计算机（服务器）上的过程或方法，就好像调用本地的过程或方法一样。RPC 抽象掉了底层的网络通信细节，使得开发者可以像编写本地程序一样编写分布式程序。
@@ -145,6 +146,20 @@ rpc BidiHello(stream HelloRequest) returns (stream HelloResponse);
 
 ## 元数据
 
-元数据是有关特定 RPC 调用的信息（例如身份验证详细信息），采用键值对列表的形式，其中键是字符串，值通常是字符串，但也可以是二进制数据。 键不区分大小写，由 ASCII 字母、数字和特殊字符 -、_、. 组成。并且不能以 grpc- 开头（这是为 gRPC 本身保留的）。二进制值键以 -bin 结尾，而 ASCII 值键则不然。 gRPC 不使用用户定义的元数据，这允许客户端提供与服务器调用相关的信息，反之亦然。 对元数据的访问取决于语言。
+<span style="color:red;">元数据是有关特定 RPC 调用的信息（例如身份验证详细信息），采用键值对列表的形式，其中键是字符串，值通常是字符串，但也可以是二进制数据。 键不区分大小写，由 ASCII 字母、数字和特殊字符 -、_、. 组成。</span>并且不能以 grpc- 开头（这是为 gRPC 本身保留的）。二进制值键以 -bin 结尾，而 ASCII 值键则不然。 gRPC 不使用用户定义的元数据，这允许客户端提供与服务器调用相关的信息，反之亦然。 对元数据的访问取决于语言。
 
+## 通道
 
+<span style="color:red;">gRPC 通道提供与指定主机和端口上的 gRPC 服务器的连接。</span>它在创建客户端存根时使用。客户端可以指定通道参数来修改 gRPC 的默认行为，例如打开或关闭消息压缩。通道有状态，包括连接和空闲。 gRPC 如何处理关闭通道取决于语言。某些语言还允许查询通道状态。
+
+# 导航
+
+## 认证
+GRPC提供了以下几种身份认证方法：
+
+`SSL/TLS`、`ALTS`、`Token-based authentication with Google`
+
+## Java基础
+```http://doc.oschina.net/grpc?t=60134```
+
+### 创建服务器
