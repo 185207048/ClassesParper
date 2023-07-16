@@ -14,6 +14,7 @@
         <module name="Proto3Demo" />
         <module name="Proto2Test" />
         <module name="JavaTools" />
+        <module name="NettyDemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,6 +22,7 @@
       <module name="DataTransmission" target="1.8" />
       <module name="Java8Stream" target="8" />
       <module name="JavaTools" target="8" />
+      <module name="NettyDemo" target="8" />
       <module name="NetWorkDemo" target="8" />
       <module name="Proto2Demo" target="8" />
       <module name="Proto2Test" target="8" />

@@ -16,8 +16,8 @@
         <module>SpringDemo</module>
         <module>DataTransmission</module>
         <module>ProtosBufDemo</module>
-        <module>Proto2Demo</module>
         <module>ProtosBufDemo/Proto2Demo</module>
+        <module>NettyDemo</module>
     </modules>
 
 

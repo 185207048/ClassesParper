@@ -33,12 +33,13 @@
 `NIO`
 
 `Netty`
+ - NettyDemo: 学习netty基础用法和与proto3搭配的用法
 
 `Grpc`
  - DataTransmission: 此模块给出Grpc的demo和基本使用逻辑
  - ProtosBufDemo: 学习Protocol Buffers Documentation，这是所有异步通讯所用到的协议
 
-`Netty + proto3`
+
 
 
 ----
