@@ -18,6 +18,7 @@
         <module>ProtosBufDemo</module>
         <module>ProtosBufDemo/Proto2Demo</module>
         <module>NettyDemo</module>
+        <module>SpringCloudLearn</module>
     </modules>
 
 
