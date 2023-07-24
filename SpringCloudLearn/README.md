@@ -1,9 +1,21 @@
 # SpringCloud学习
-## Gateway网关
+# Gateway网关
 
 ```
 https://spring.io/projects/spring-cloud-gateway
 ```
+gateway网关支持以下内容：
+- 支持集成springmvc 5.0和spring boot 2.0
+- 根据请求内容匹配路由
+- 通过谓词工厂和过滤去可以定位到指定路有个
+- 断路器集成
+- 可以集成spring cloud Discovery客户端
+- 通过配置就可以写谓词工厂和过滤器
+- 访问限速
+- 路径重写
+
+##谓词工厂
+谓词工厂的作用就是通过匹配请求包中不同的谓词来进入不同的路由。
 
 ### After Route Predicate 工厂
 After Predicate工厂使用datetime字段匹配在指定日期时间之后发生的请求
@@ -47,7 +59,94 @@ predicates:
 - Method=GET,POST
 ```
 
+### 路径路由工厂
+```
+- Path=/red/{segment},/blue/{segment}
+```
+可以使用程序方法来访问配置中的变量。
+```
+Map<String, String> uriVariables = ServerWebExchangeUtils.getUriTemplateVariables(exchange);
+String segment = uriVariables.get("segment");
+```
+
+### 访问路由工厂
+可以通过访问变量来将请求分给不同路由,这里可以上传两个参数第一个参数是用来匹配请求变量，第二个参数用来撰写正则表达式
+```
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: query_route
+        uri: https://example.org
+        predicates:
+        - Query=red, gree.
+
+```
+spring cloud gateway 提供了修改远程地址解析方式的功能，但是目前不知道其用法和目的
+### 权重路由工厂
+可以通过配置group和weight两个参数来设置权重，这里的权重是指流量的分配的权重
+```
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: weight_high
+        uri: https://weighthigh.org
+        predicates:
+        - Weight=group1, 8
+      - id: weight_low
+        uri: https://weightlow.org
+        predicates:
+        - Weight=group1, 2
+```
+此路由会将 ~80% 的流量转发给 weighthigh.org，将 ~20% 的流量转发给 weighlow.org
+
+###防火墙工厂
+这可以与反向代理（如负载均衡器或 Web 应用程序防火墙）一起使用，其中仅当请求来自这些反向代理使用的受信任 IP 地址列表时，才应允许该请求。
+```
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: xforwarded_remoteaddr_route
+        uri: https://example.org
+        predicates:
+        - XForwardedRemoteAddr=192.168.1.1/24
+```
+例如，如果 X-Forwarded-For 标头包含 192.168.1.10，则此路由匹配.
+
+### 过滤工厂
+这个相当于一个过滤器来过滤匹配的路由，工厂包括以下内容：
+- AddRequestHeader： 这个过滤器可以将一个值添加到请求头中。它接受两个参数，一个是头的名字，另一个是值。
+- AddResponseHeader： 与 AddRequestHeader 相似，但是是添加到响应头中。
+- PrefixPath： 这个过滤器可以在请求的 URL 前面添加一个路径。
+- RewritePath： 这个过滤器可以重写请求的 URL。
+- Hystrix： 这个过滤器可以将请求封装在一个 Hystrix 命令中，提供断路器和线程隔离。
+- Retry： 这个过滤器可以在请求失败时重试。
+- SetPath： 这个过滤器用于设置请求的路径。
+- SetStatus： 这个过滤器用于设置响应的 HTTP 状态码。
+- StripPrefix： 这个过滤器用于从请求的 URL 中移除部分前缀。
+- RequestRateLimiter： 这个过滤器用于限制请求的速率。
+### 断路器与线程隔离
+### 全局过滤器
+- 全局过滤器和GatewayFilter的组合排序
+以Bean的形式可以将全局过滤器加载到项目中，需要集成`GlobalFilter`, `Ordered`
+- 网关指标过滤器
+此项通过`spring.cloud.gateway.metrics.enabled`在配置文件中进行配置，如果配置为false则关闭
+- 本地响应缓存过滤器
+- 转发路由过滤器
+- 网络路由过滤器
+- 
+  
+### HttpHeaderFilter
+### TLS和SSL
+### 
+
+
+
 # 代码示例
+![网课的微服务架构.png](photo/网课的微服务架构.png)
 ```
 SpringCloudLearn的Order是订单服务
 ```
+

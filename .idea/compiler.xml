@@ -13,6 +13,7 @@
         <module name="Java8Stream" />
         <module name="SpringDemo" />
         <module name="Proto3Demo" />
+        <module name="GateWay" />
         <module name="Proto2Test" />
         <module name="JavaTools" />
         <module name="NettyDemo" />
@@ -22,6 +23,7 @@
     <bytecodeTargetLevel>
       <module name="ClassesParper" target="1.5" />
       <module name="DataTransmission" target="1.8" />
+      <module name="GateWay" target="8" />
       <module name="Java8Stream" target="8" />
       <module name="JavaTools" target="8" />
       <module name="NettyDemo" target="8" />
