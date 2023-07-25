@@ -1,4 +1,19 @@
 # SpringCloud学习
+微服务网关的作用：
+- 请求路由: Gateway 能将来自客户端的请求路由到对应的微服务。它根据请求的路径、方法等信息，决定将该请求转发到哪个微服务。
+
+- 负载均衡: 在有多个实例的微服务环境中，Gateway 还可以对进入的请求进行负载均衡，有效地分发请求到各个微服务实例，以提高系统的整体性能和可用性。
+
+- 服务聚合: Gateway 也可以将多个微服务的响应聚合成一个对客户端的响应，使得客户端无需单独和每个微服务通信，降低了复杂性。
+
+- 认证和授权: Gateway 可以在请求进入微服务之前对其进行身份验证和授权，确保只有被授权的请求才能访问后端的微服务。
+
+- 限流和熔断: 对于高流量的请求，Gateway 可以提供限流功能以保护后端的微服务。此外，如果某个服务出现故障，Gateway 还可以提供熔断机制，阻止对故障服务的请求，保护整个系统的稳定性。
+
+- 缓存: Gateway 可以对某些请求的响应进行缓存，以减少对微服务的请求，提高系统的响应速度。
+
+- 监控和日志: Gateway 可以记录请求和响应的详细信息，提供有价值的监控数据和日志，有助于故障排查和系统优化。
+
 # Gateway网关
 
 ```
@@ -142,6 +157,13 @@ spring:
 ### TLS和SSL
 ### 
 
+# nginx + traefik作为网关
+通常情况下也可以使用nginx + traefik替代gateway
+
+# 负载均衡
+## Ribbon
+## Spring Cloud LoadBalancer
+[Spring Cloud LoadBalancer官网地址](https://docs.spring.io/spring-cloud-commons/docs/current/reference/html/#spring-cloud-loadbalancer)
 
 
 # 代码示例

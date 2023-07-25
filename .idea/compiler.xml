@@ -23,19 +23,19 @@
     <bytecodeTargetLevel>
       <module name="ClassesParper" target="1.5" />
       <module name="DataTransmission" target="1.8" />
-      <module name="GateWay" target="8" />
+      <module name="GateWay" target="17" />
       <module name="Java8Stream" target="8" />
       <module name="JavaTools" target="8" />
       <module name="NettyDemo" target="8" />
       <module name="NetWorkDemo" target="8" />
-      <module name="Order" target="8" />
+      <module name="Order" target="17" />
       <module name="Proto2Demo" target="8" />
       <module name="Proto2Test" target="8" />
       <module name="Proto3Demo" target="8" />
       <module name="ProtosBufDemo" target="8" />
-      <module name="SpringCloudLearn" target="8" />
+      <module name="SpringCloudLearn" target="17" />
       <module name="SpringDemo" target="8" />
-      <module name="Stock" target="8" />
+      <module name="Stock" target="17" />
       <module name="ThreadDemo" target="8" />
     </bytecodeTargetLevel>
   </component>
