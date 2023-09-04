@@ -1,2 +1,19 @@
 server:
   port: 8011
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: ceaf38f4-481a-4b3a-9202-44f2b201c758
+        enabled: true
+        username: nacos
+        password: nacos
+    loadbalancer:
+      nacos:
+        enabled: true
+  application:
+    name: order_nacos
+logging:
+  level:
+    root: DEBUG

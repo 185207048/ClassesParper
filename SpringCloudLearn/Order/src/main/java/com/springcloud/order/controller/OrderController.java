@@ -14,7 +14,7 @@ public class OrderController {
     @RequestMapping("/getorder")
     public String getOrder(){
         System.out.println("获取order");
-        String msg = restTemplate.getForObject("http://127.0.0.1:8012/stock/reduct",String.class);
+        String msg = restTemplate.getForObject("http://stock_nacos/stock/reduct",String.class);
         return "order " + msg;
     }
 

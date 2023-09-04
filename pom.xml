@@ -19,6 +19,7 @@
         <module>ProtosBufDemo/Proto2Demo</module>
         <module>NettyDemo</module>
         <module>SpringCloudLearn</module>
+        <module>JavaNIO</module>
     </modules>
 
 

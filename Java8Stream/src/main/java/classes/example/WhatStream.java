@@ -64,7 +64,8 @@ public class WhatStream {
 
         // count()：计算 Stream 中的元素数量。
         System.out.println("----------count()----------");
-        long names_count = names.stream().flatMap(name -> Stream.of(name.split(""))).count();
+        long names_count = names.stream().flatMap(name ->
+                Stream.of(name.split(""))).count();
         System.out.println(names_count);
 
     }
