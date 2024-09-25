@@ -20,6 +20,9 @@
         <module>NettyDemo</module>
         <module>SpringCloudLearn</module>
         <module>JavaNIO</module>
+        <module>NormalModule</module>
+        <module>JavaSoftAble</module>
+        <module>JavaAnnotation</module>
     </modules>
 
 

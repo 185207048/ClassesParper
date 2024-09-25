@@ -12,12 +12,15 @@
         <module name="DataTransmission" />
         <module name="SpringDemo" />
         <module name="Proto2Test" />
+        <module name="JavaSoftAble" />
         <module name="JavaTools" />
         <module name="JavaNIO" />
         <module name="Java8Stream" />
         <module name="Proto3Demo" />
         <module name="GateWay" />
+        <module name="NormalModule" />
         <module name="NettyDemo" />
+        <module name="JavaAnnotation" />
         <module name="Stock" />
       </profile>
     </annotationProcessing>
@@ -26,10 +29,13 @@
       <module name="DataTransmission" target="1.8" />
       <module name="GateWay" target="17" />
       <module name="Java8Stream" target="8" />
+      <module name="JavaAnnotation" target="8" />
       <module name="JavaNIO" target="8" />
+      <module name="JavaSoftAble" target="8" />
       <module name="JavaTools" target="8" />
       <module name="NettyDemo" target="8" />
       <module name="NetWorkDemo" target="8" />
+      <module name="NormalModule" target="8" />
       <module name="Order" target="17" />
       <module name="Proto2Demo" target="8" />
       <module name="Proto2Test" target="8" />
