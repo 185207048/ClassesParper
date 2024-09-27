@@ -15,6 +15,7 @@
         <module name="JavaSoftAble" />
         <module name="JavaTools" />
         <module name="JavaNIO" />
+        <module name="JavaPool" />
         <module name="Java8Stream" />
         <module name="Proto3Demo" />
         <module name="GateWay" />
@@ -31,6 +32,7 @@
       <module name="Java8Stream" target="8" />
       <module name="JavaAnnotation" target="8" />
       <module name="JavaNIO" target="8" />
+      <module name="JavaPool" target="8" />
       <module name="JavaSoftAble" target="8" />
       <module name="JavaTools" target="8" />
       <module name="NettyDemo" target="8" />

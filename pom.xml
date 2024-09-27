@@ -23,6 +23,7 @@
         <module>NormalModule</module>
         <module>JavaSoftAble</module>
         <module>JavaAnnotation</module>
+        <module>JavaPool</module>
     </modules>
 
 

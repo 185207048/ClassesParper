@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/Java8Stream/Java8Stream.iml" filepath="$PROJECT_DIR$/Java8Stream/Java8Stream.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaAnnotation/JavaAnnotation.iml" filepath="$PROJECT_DIR$/JavaAnnotation/JavaAnnotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaNIO/JavaNIO.iml" filepath="$PROJECT_DIR$/JavaNIO/JavaNIO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaPool/JavaPool.iml" filepath="$PROJECT_DIR$/JavaPool/JavaPool.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaSoftAble/JavaSoftAble.iml" filepath="$PROJECT_DIR$/JavaSoftAble/JavaSoftAble.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaTools/JavaTools.iml" filepath="$PROJECT_DIR$/JavaTools/JavaTools.iml" />
       <module fileurl="file://$PROJECT_DIR$/NetWorkDemo/NetWorkDemo.iml" filepath="$PROJECT_DIR$/NetWorkDemo/NetWorkDemo.iml" />
